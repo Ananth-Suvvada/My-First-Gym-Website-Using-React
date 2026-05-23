@@ -10,6 +10,7 @@
   margin: 20px auto;
 }
 .programsGrid {
+  height: 80%;
   padding: 50px;
   width: 100%;
   display: grid;
@@ -72,7 +73,13 @@
   font-weight: 600;
 }
 
-@media (max-width: 428px) {
+@media (max-width: 480px) {
+  .programs {
+    max-height: 100%;
+  }
+  .programsGrid {
+    height: 80%;
+  }
   .programs h1 {
     font-size: 0.5rem;
   }
@@ -99,6 +106,12 @@
 }
 
 @media (max-width: 768px) {
+  .programs {
+    height: 100%;
+  }
+  .programsGrid {
+    height: 80%;
+  }
   .programs h1 {
     font-size: 2rem;
   }
@@ -121,5 +134,18 @@
     to {
       transform: translateX(20px);
     }
+  }
+}
+
+@media (max-height: 1024px) {
+  .programs {
+    height: 100%;
+  }
+  .programs h1 {
+    font-size: 2.5rem;
+  }
+  .programeCard {
+    width: 280px;
+    height: 350px;
   }
 }
