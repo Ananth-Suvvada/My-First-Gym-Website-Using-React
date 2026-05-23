@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.807);
   /* border-bottom: 2px solid red; */
   padding: 15px 0;
   margin-bottom: 15px;
@@ -69,4 +70,18 @@
 }
 .enrollBtn:active {
   transform: scale(1.01);
+}
+
+@media (max-width: 428px) {
+  .logo {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .menu {
+    display: none;
+  }
+  .enrollBtn {
+    padding: 10px 22px;
+    margin-right: 10px;
+  }
 }
