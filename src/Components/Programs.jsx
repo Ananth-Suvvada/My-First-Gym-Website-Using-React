@@ -4,7 +4,7 @@ import { programData } from "../Data/Gym Website Data.js";
 
 const Programs = () => {
   return (
-    <section className="programs">
+    <section className="programs" id="programs">
       <h1>Our Programmes</h1>
       <div className="programsGrid">
         {programData.map((program) => (

@@ -4,7 +4,7 @@ import { trainerData } from "../Data/Gym Website Data";
 
 const Trainers = () => {
   return (
-    <section className="trainers">
+    <section className="trainers" id="trainers">
       <h1>Our Trainers</h1>
       <div className="trainersGrid">
         {trainerData.map((trainer) => (

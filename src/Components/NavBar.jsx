@@ -7,18 +7,21 @@ const NavBar = () => {
         BOY <span>2</span> MAN
       </h1>
       <ul className="menu">
-        <a href="">
-          <li>Home</li>
-        </a>
-        <a href="">
-          <li>Programs</li>
-        </a>
-        <a href="">
-          <li>Trainers</li>
-        </a>
-        <a href="">
-          <li>Contact</li>
-        </a>
+        <li>
+          <a href="#hero">Home</a>
+        </li>
+
+        <li>
+          <a href="#programs">Programs</a>
+        </li>
+
+        <li>
+          <a href="#trainers">Trainers</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
       <button className="enrollBtn">Enroll Now</button>
     </div>

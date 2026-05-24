@@ -1,0 +1,91 @@
+.contact {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.contact-overlay {
+  border-radius: 20px;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 0 30px red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contact-overlay h1 {
+  font-size: 2.5rem;
+}
+.contact-overlay h1 span {
+  color: red;
+}
+.contact-overlay p {
+  font-size: 1.1rem;
+}
+.contact-overlay form input {
+  width: 220px;
+  margin: 10px;
+  padding: 7px 14px;
+  border: 2px solid red;
+  background: transparent;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+}
+input::placeholder {
+  color: white;
+}
+.contact-overlay form textarea {
+  width: 440px;
+  height: 100px;
+  display: block;
+  margin-left: 30px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  border: 2px solid red;
+  outline: none;
+  resize: none;
+  text-wrap-mode: wrap;
+}
+.contact-overlay form input:focus,
+.contact-overlay form textarea:focus {
+  box-shadow: 0 0 10px red;
+}
+.contact-overlay form button {
+  padding: 10px 50px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  background: linear-gradient(90deg, orange, red);
+}
+
+@media (max-width: 426px) {
+  .contact-overlay {
+    width: 300px;
+    height: 450px;
+    gap: 20px;
+  }
+  .contact-overlay h1 {
+    font-size: 1.5rem;
+  }
+  .contact-overlay p {
+    font-size: 0.8rem;
+  }
+
+  .contact-overlay form input {
+    width: 250px;
+  }
+  .contact-overlay form textarea {
+    width: 240px;
+  }
+}
