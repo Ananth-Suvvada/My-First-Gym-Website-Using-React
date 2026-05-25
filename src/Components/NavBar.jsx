@@ -1,5 +1,7 @@
 import React from "react";
 import "../Styles/NavBar.css";
+import menuIcon from "../assets/icon-menu.png";
+
 const NavBar = () => {
   return (
     <div className="NavBar">
@@ -24,6 +26,9 @@ const NavBar = () => {
         </li>
       </ul>
       <button className="enrollBtn">Enroll Now</button>
+      <div className="toggle">
+        <img src={menuIcon} alt="" />
+      </div>
     </div>
   );
 };

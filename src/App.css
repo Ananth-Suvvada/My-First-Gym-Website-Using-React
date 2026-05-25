@@ -1,14 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-html {
-  scroll-behavior: auto;
-  scroll-padding-top: 100px;
-}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
+body,
+html {
   font-family: "Roboto", sans-serif;
   background-color: rgba(0, 0, 0, 0.895);
   color: white;

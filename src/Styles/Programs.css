@@ -1,7 +1,7 @@
 .programs {
   justify-items: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
   margin-top: 50px;
 }
 .programs h1 {
@@ -14,7 +14,7 @@
   padding: 50px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   align-items: center;
   justify-content: center;
   justify-items: center;
@@ -73,41 +73,9 @@
   font-weight: 600;
 }
 
-@media (max-width: 480px) {
+@media (width < 480px) {
   .programs {
     max-height: 100%;
-  }
-  .programsGrid {
-    height: 80%;
-  }
-  .programs h1 {
-    font-size: 0.5rem;
-  }
-  .programeCard {
-    width: 250px;
-    height: 250px;
-  }
-  @keyframes floating {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-30px);
-    }
-  }
-  @keyframes reverse-floating {
-    from {
-      transform: translateX(-20px);
-    }
-    to {
-      transform: translateX(20px);
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .programs {
-    height: 100%;
   }
   .programsGrid {
     height: 80%;
@@ -116,8 +84,14 @@
     font-size: 2rem;
   }
   .programeCard {
-    width: 300px;
+    width: 250px;
     height: 300px;
+  }
+  .programeCard h2 {
+    font-size: 1.1rem;
+  }
+  .programeCard p {
+    font-size: 0.8rem;
   }
   @keyframes floating {
     from {
@@ -137,15 +111,84 @@
   }
 }
 
-@media (max-height: 1024px) {
-  .programs {
-    height: 100%;
+@media (width >= 480px) and (width <= 768px) {
+  .programsGrid {
+    min-height: 100%;
   }
   .programs h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .programeCard {
-    width: 280px;
+    width: 250px;
+    height: 300px;
+  }
+  .programeCard h2 {
+    font-size: 1.1rem;
+  }
+  .programeCard p {
+    font-size: 0.8rem;
+  }
+  @keyframes floating {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-30px);
+    }
+  }
+  @keyframes reverse-floating {
+    from {
+      transform: translateX(-20px);
+    }
+    to {
+      transform: translateX(20px);
+    }
+  }
+}
+
+@media (width > 768px) and (width < 1024px) {
+  .programs h1 {
+    font-size: 2rem;
+  }
+  .programeCard {
+    width: 220px;
+    height: 330px;
+  }
+  .programeCard h2 {
+    font-size: 1.1rem;
+  }
+  .programeCard p {
+    font-size: 0.8rem;
+  }
+  .programs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .programsGrid {
+    min-height: 50vh;
+  }
+}
+@media (width >= 1024px) and (width <= 1440px) {
+  .programs h1 {
+    font-size: 2rem;
+  }
+  .programeCard {
+    width: 250px;
     height: 350px;
+  }
+  .programeCard h2 {
+    font-size: 1.2rem;
+  }
+  .programeCard p {
+    font-size: 1rem;
+  }
+  .programs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .programsGrid {
+    min-height: 50vh;
   }
 }
