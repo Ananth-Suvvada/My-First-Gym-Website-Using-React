@@ -4,7 +4,7 @@ import "../Styles/Footer.css";
 const Footer = () => {
   return (
     <section className="footer">
-      <p>©️All Rights Reserved || Ananth Suvvada</p>
+      <p>Copyright ©️ 2026 Ananth Suvvada || All Rights Reserved</p>
     </section>
   );
 };
