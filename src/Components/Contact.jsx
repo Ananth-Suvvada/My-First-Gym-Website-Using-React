@@ -12,10 +12,7 @@ const Contact = () => {
           <h2>
             Join in BOY <span>2</span> MAN GYM
           </h2>
-          <p>
-            Want to join us <span>OR</span> Have any queries? Fill the form
-            below..
-          </p>
+          <p>Want to join us or have any queries? Fill out the form below.</p>
         </div>
         <form onSubmit={handleFormSubmission}>
           <input type="text" placeholder="Enter Your Name.." required />

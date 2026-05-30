@@ -148,7 +148,7 @@
 
 @media (width >= 1024px) {
   .trainers {
-    margin: 50px auto;
+    /* margin: 50px auto; */
     display: flex;
     flex-direction: column;
     gap: 0px;
