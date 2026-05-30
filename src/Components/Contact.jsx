@@ -1,18 +1,27 @@
 import React from "react";
 import "../Styles/Contact.css";
+
 const Contact = () => {
+  function handleFormSubmission(e) {
+    e.preventDefault();
+  }
   return (
     <section className="contact" id="contact">
       <div className="contact-overlay">
-        <h1>
-          Join Now in BOY <span>2</span> MEN GYM
-        </h1>
-        <p>Have any quaries? Are you Interested? Fill the form below!</p>
-        <form>
-          <input type="text" placeholder="Enter Your Name" />
-          <input type="email" placeholder="Enter your Email" />
-          <textarea>Write Something Here...</textarea>
-          <button>Submit</button>
+        <div className="contact-content">
+          <h2>
+            Join in BOY <span>2</span> MAN GYM
+          </h2>
+          <p>
+            Want to join us <span>OR</span> Have any queries? Fill the form
+            below..
+          </p>
+        </div>
+        <form onSubmit={handleFormSubmission}>
+          <input type="text" placeholder="Enter Your Name.." required />
+          <input type="email" placeholder="Enter Your Email.." required />
+          <input type="tel" placeholder="Enter Your Phone Number" required />
+          <button type="submit">Submit</button>
         </form>
       </div>
     </section>
